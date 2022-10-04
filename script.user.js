@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSDocs tweaks
 // @author       xparadoxical
-// @version      1.1
+// @version      1.1.1
 // @description  Redirects to the en-us version of the current msdocs page and expands the document outline ("In this article")
 // @source       https://github.com/xparadoxical/msdocs-tweaks
 // @updateURL    https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
@@ -19,5 +19,8 @@ if (pathname[1].toLowerCase() !== 'en-us') {
     window.addEventListener('load', (event) => {
         document.querySelector('nav#side-doc-outline button[data-show-more]').click();
         document.activeElement.blur();
+
+        const hash = window.location.hash;
+        document.querySelector("[id='" + hash.substring(1) + "']").scrollIntoView();
     });
 }
