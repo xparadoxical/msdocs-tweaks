@@ -6,7 +6,6 @@
 // @version      1.1.3
 // @description  Redirects to the en-us version of the current msdocs page and expands the document outline ("In this article")
 // @source       https://github.com/xparadoxical/msdocs-tweaks
-// @updateURL    https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
 // @downloadURL  https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
 // @icon         https://learn.microsoft.com/favicon.ico
 // @grant        none
