@@ -8,6 +8,7 @@
 // @source       https://github.com/xparadoxical/msdocs-tweaks
 // @updateURL    https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
 // @downloadURL  https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
+// @icon         https://learn.microsoft.com/favicon.ico
 // @grant        none
 // @run-at       document-start
 // @match        https://learn.microsoft.com/*
