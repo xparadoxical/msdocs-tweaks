@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         MSDocs tweaks
-// @namespace    https://github.com/xparadoxical/msdocs-tweaks
+// @namespace    https://github.com/xparadoxical
 // @author       xparadoxical
 // @license      MIT
-// @version      1.1.2
+// @version      1.1.3
 // @description  Redirects to the en-us version of the current msdocs page and expands the document outline ("In this article")
 // @source       https://github.com/xparadoxical/msdocs-tweaks
 // @updateURL    https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
