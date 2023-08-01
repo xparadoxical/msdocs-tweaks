@@ -3,7 +3,7 @@
 // @namespace    https://github.com/xparadoxical
 // @author       xparadoxical
 // @license      MIT
-// @version      1.1.3
+// @version      1.2
 // @description  Redirects to the en-us version of the current msdocs page and expands the document outline ("In this article")
 // @source       https://github.com/xparadoxical/msdocs-tweaks
 // @downloadURL  https://github.com/xparadoxical/msdocs-tweaks/raw/main/script.user.js
@@ -26,6 +26,10 @@ if (pathname[1].toLowerCase() !== 'en-us') {
         document.activeElement.blur/*unfocus*/();
 
         const hash = window.location.hash;
-        document.querySelector("[id='" + hash.substring(1) + "']").scrollIntoView();
+        document.getElementById(hash.substring(1)).scrollIntoView();
+
+        const inThisArticle = document.getElementById("affixed-right-container");
+        inThisArticle.style.position = "sticky";
+        inThisArticle.style.top = "1.5rem"; //the default margin
     });
 }
